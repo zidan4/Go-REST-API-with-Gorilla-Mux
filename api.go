@@ -16,7 +16,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 	response := Message{Text: "Welcome to my Go REST API 🚀"}
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(response)
-}
+} 
 
 func main() {
 	r := mux.NewRouter()
